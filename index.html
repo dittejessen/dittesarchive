@@ -3,16 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>home - dittesarchive</title>
-    <link href="components/header/header.css" rel="stylesheet" type="text/css">
-    <link href="components/footer/footer.css" rel="stylesheet" type="text/css">
+    <title>dittesarchive - portfolio</title>
+    <link rel="icon" type="image/x-icon" href="./images/faviconpng.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Puritan:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/ery7glj.css">
+    <link href="./index.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <div id="header"></div>
-
-    ABOUT
+    <header id="header-container">
+        <div id="title-container">
+            <img src="../../images/dittelogo.png" alt="profile-logo">
+            <div id="name-container">
+                <h1>
+                    dittesarchive
+                </h1>
+                <h2>
+                    <i id="undertitle">
+                        Ditte Jessen - Multimedia Designer
+                    </i>
+                </h2>
+            </div>
+        </div>
     
-    <div id="footer"></div>
-    <script src="./script.js"></script>
+        <div id="nav-container">
+            <nav>
+                <ul><li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- TILFØJ DIN HALULA HER -->
+        <section id="about">
+            <div>
+                <h2>About</h2>
+            </div>
+        </section>
+
+        <section id="projects">
+
+            <div id="container">
+                <h2>Projects</h2>
+                
+                <div id="card-container">
+                    <div class="card">CARD</div>
+                    <div class="card">CARD</div>
+                    <div class="card">CARD</div>
+                </div>
+
+                <button class="button">View all projects</button>
+
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+        </section>
+
+        <button class="button-up" onclick="window.scrollTo(0,0)">UP</button>
+
+    </main>
+
+
+    <footer>
+        <div id="footer-container">
+            <div id="copyright-container">
+                © 2024 - Ditte Jessen
+            </div>
+    
+            <div id="some-container">
+                    <img src="../../images/pinterest.png" alt="pinterest icon">
+                <img src="../../images/linkedin.png" alt="linkedin icon">
+                <img src="../../images/instagram.png" alt="instagram icon">
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
