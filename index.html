@@ -14,16 +14,14 @@
 <body>
     <header id="header-container">
         <div id="title-container">
-            <img src="../../images/dittelogo.png" alt="profile-logo">
+            <img src="./images/dittelogo.png" alt="profile-logo">
             <div id="name-container">
                 <h1>
                     dittesarchive
                 </h1>
-                <h2>
-                    <i id="undertitle">
+                <h3 id="undertitle">
                         Ditte Jessen - Multimedia Designer
-                    </i>
-                </h2>
+                </h3>
             </div>
         </div>
     
@@ -39,11 +37,34 @@
     </header>
 
     <main>
-        <!-- TILFØJ DIN HALULA HER -->
+        <!-- TILFØJ INDHOLD HER -->
         <section id="about">
             <div>
                 <h2>About</h2>
             </div>
+
+            <div class="about-grid-container">
+                <div class="grid-item item1">
+                    <img src="./images/aboutme.png" alt="photo of me" width="500px">
+                </div>
+
+                <div class="grid-item item2">
+                    My name is Ditte, and I am currently taking a degree in multimedia design at UCL in Odense, Denmark.
+                </div>
+
+                <div class="grid-item item3">
+                    <h3>
+                        Skills
+                    </h3>
+                </div>
+
+                <div class="grid-item item4">
+                    <h3>
+                        Tools
+                    </h3>
+                </div>
+            </div>
+
         </section>
 
         <section id="projects">
@@ -66,10 +87,11 @@
             <h2>Contact</h2>
         </section>
 
-        <button class="button-up" onclick="window.scrollTo(0,0)">UP</button>
+        <div class="up-container">
+            <button class="button-up" onclick="window.scrollTo(0,0)"><img src="./images/arrow.png" alt="arrow up" width="20px"></button>
+        </div>
 
     </main>
-
 
     <footer>
         <div id="footer-container">
@@ -78,9 +100,9 @@
             </div>
     
             <div id="some-container">
-                    <img src="../../images/pinterest.png" alt="pinterest icon">
-                <img src="../../images/linkedin.png" alt="linkedin icon">
                 <img src="../../images/instagram.png" alt="instagram icon">
+                <img src="../../images/linkedin.png" alt="linkedin icon">
+                <img src="../../images/pinterest.png" alt="pinterest icon">
             </div>
         </div>
     </footer>

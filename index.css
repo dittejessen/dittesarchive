@@ -59,7 +59,7 @@ body{
 }
 
 section {
-    margin: 8%;
+    margin: 7%;
 }
 
 #card-container {
@@ -69,7 +69,57 @@ section {
 
 h2 {
     margin-left: 1%;
+    font-family: "the-seasons", sans-serif;
+    color: #121212;
+    padding-top: 5%;
+    font-size: 32px;
+}
+
+h3 {
+    margin-left: 1%;
+    font-family: "the-seasons", sans-serif;
+    color: #121212;
+    font-size: 24px;
+}
+
+/* about */
+.about-grid-container {
+    display: grid;
+    gap: 10px;
+    padding: 10px;
+}
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    font-size: 30px;
+}
+
+.item1 {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.item1 img {
+    border-radius: 12px;
+}
+
+.item2 {
+    grid-column: 2 / span 8;
+    grid-row: 1;
+    padding-left: 10%;
+    font-size: 18px;
     font-family: "Puritan", sans-serif;
+    line-height: 1.4;
+}
+
+.item3 {
+    grid-column: 1 / span 11;
+    grid-row: 2;
+}
+
+.item4 {
+    grid-column: 1 / span 11;
+    grid-row: 3;
 }
 
 .card {
@@ -98,30 +148,34 @@ h2 {
     text-align: center;
     text-decoration: none;
     font-size: 16px;
-    margin: 2px;
+    margin: 0% 0% 0% 1%;
     cursor: pointer;
     transition: 0.3s;
-     font-family: "Puritan", sans-serif;
+    font-family: "Puritan", sans-serif;
 }
 
 .button:hover {
     background-color: #797E46;
 }
 
-.button-up {
+.button-up { 
     background-color: #ABB160;
     border: none;
     border-radius: 6px;
     color: #FCF9F6;
-    padding: 14px 20px;
+    padding: 14px 14px;
     text-align: center;
     text-decoration: none;
     font-size: 16px;
-    margin: 2px;
     cursor: pointer;
     transition: 0.3s;
-    right: 0;
-    position: absolute;
+}
+
+.up-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 2%;
 }
 
 .button-up:hover {
@@ -156,7 +210,7 @@ footer {
 
 #some-container {
     display: flex;
-    flex-direction: row-reverse;
+    justify-content: flex-end;
     position: absolute;
     right: 7.5%;
 }
