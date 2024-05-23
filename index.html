@@ -61,13 +61,11 @@
     <main>
         <!-- ABOUT -->
         <section id="about">
-            <div>
-                <h2>About</h2>
-            </div>
+            <h2>About</h2>
 
             <div class="about-grid-container">
                 <div class="grid-item item2">
-                    <img src="./images/aboutme.png" alt="photo of me" width="520px">
+                    <img src="./images/aboutme.png" alt="photo of me">
                 </div>
 
                 <div class="grid-item item1">
@@ -116,11 +114,10 @@
                     </div>
                 </div>
             </div>
-
         </section>
 
         <!-- PROJECTS -->
-        <section id="projects">
+        <!-- <section id="projects">
             <div id="container">
                 <h2>Projects</h2>
                 <div id="projects-text">
@@ -132,38 +129,43 @@
                     <div class="card"><img src="./images/app-prototype.png" alt="prototype of news app" height="500px"></div>
                 </div>
 
-                <button class="button"><a href="projects.html">View all projects</a></button>
+                <a href="projects.html">
+                    <button class="button">View all projects</button>
+                </a>
             </div>
-        </section>
+        </section> -->
 
-        <!-- ABOUT -->
+        <!-- CONTACT -->
         <section id="contact">
             <h2>Contact</h2>
 
             <h3>Let's work together!</h3>
-            <div id="contact-text">
-                <p>If the aesthetic of my work matches your brand and if you're interested in knowing more, I would love to work with you! 
-                    <br>
-                Fill out the form below or feel free to contact me directly, then I will get back to you as soon as possible.</p>
+            <div id="contact-container">
+                <div id="contact-text">
+                    <p>If the aesthetic of my work matches your brand and if you're interested in knowing more, I would love to work with you! 
+                        <br>
+                    Fill out the form below or feel free to contact me directly, then I will get back to you as soon as possible.</p>
+                </div>
+    
+                <div class="contact-form-container">
+                    <form>
+                    <label for="fname">Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="First and last name">
+    
+                    <label for="lname">E-mail address</label>
+                    <input type="text" id="lname" name="lastname" placeholder="example@email.com">
+    
+                    <label for="lname">Company name or URL</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Company name or link to website">
+    
+                    <label for="subject">Your query</label>
+                    <textarea id="subject" name="subject" placeholder="What can I help you with?" style="height:200px"></textarea>
+    
+                    <input type="submit" value="Submit">
+                    </form>
+                </div>
             </div>
 
-            <div class="contact-form-container">
-                <form>
-                <label for="fname">Name</label>
-                <input type="text" id="fname" name="firstname" placeholder="First and last name">
-
-                <label for="lname">E-mail address</label>
-                <input type="text" id="lname" name="lastname" placeholder="example@email.com">
-
-                <label for="lname">Company name or URL</label>
-                <input type="text" id="lname" name="lastname" placeholder="Company name or link to website">
-
-                <label for="subject">Your query</label>
-                <textarea id="subject" name="subject" placeholder="What can I help you with?" style="height:200px"></textarea>
-
-                <input type="submit" value="Submit">
-                </form>
-            </div>
 
             <div id="contact2-text">
                 <p>
@@ -190,9 +192,15 @@
             </div>
     
             <div id="some-container">
-                    <img src="../../images/instagram.png" alt="instagram icon">
-                <img src="../../images/linkedin.png" alt="linkedin icon">
-                <img src="../../images/pinterest.png" alt="pinterest icon">
+                    <a href="https://www.instagram.com/dittejessen/" target="_blank">
+                        <img src="./images/instagram.png" alt="instagram icon">
+                    </a>
+                    <a href="https://www.linkedin.com/in/ditte-jessen-117210181/" target="_blank">
+                        <img src="./images/linkedin.png" alt="linkedin icon">
+                    </a>
+                    <a href="https://dk.pinterest.com/dittejessen12/" target="_blank">
+                        <img src="./images/pinterest.png" alt="pinterest icon">
+                    </a>
             </div>
         </div>
     </footer>

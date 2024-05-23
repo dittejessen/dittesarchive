@@ -143,10 +143,10 @@ body{
     width: 100%;
     margin: 0;
     box-sizing: border-box;
-    position: fixed; /* Make the navbar fixed */
-    top: 0; /* Position it at the top */
-    left: 0; /* Ensure it spans the full width from the left */
-    z-index: 1000; /* Ensure it is above other content */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
 
 .navbar-left {
@@ -248,22 +248,22 @@ section {
 
 @media (max-width: 820px) {
 section {
-    margin: 7% 9.3% 7% 9.3%;
+    margin: 7% 6% 7% 6%;
     padding-top: 70px;
     }
 }
 
 h2 {
-    margin-left: 1%;
     font-family: "the-seasons", sans-serif;
     color: #121212;
-    padding-top: 60px;
+    padding-top: 40px;
     font-size: 32px;
+    margin-left: 1%;
 }
 
 @media (max-width: 820px) {
 h2 {
-    margin-left: 3.5%;
+    margin-left: 0%;
     font-family: "the-seasons", sans-serif;
     color: #121212;
     padding-top: 60px;
@@ -275,6 +275,7 @@ h3 {
     font-family: "the-seasons", sans-serif;
     color: #121212;
     font-size: 22px;
+    margin-left: 1%;
 }
 
 /* ABOUT */
@@ -303,6 +304,7 @@ h3 {
 }
 
 .item2 img {
+    width: 32vw;
     border-radius: 12px;
 }
 
@@ -314,7 +316,6 @@ h3 {
     line-height: 1.5;
     margin-top: 20px;
     margin-bottom: 14px;
-    /* background-color: #F4E3DB; */
 }
 
 .skill-title {
@@ -325,7 +326,6 @@ h3 {
 .item4 {
     grid-column: 1 / span 11;
     grid-row: 3;
-    /* background-color: #F4E3DB; */
 }
 
 .tools-container {
@@ -334,17 +334,18 @@ h3 {
 }
 
 .tools-container > div {
-    width: 60px;
-    margin: 0px 24px 30px 0px;
+    width: 50px;
+    margin: 0px 24px 1px 0px;
 }
 
 #tools-img {
-    height: 70px;
+    height: 65px;
 }
 
 @media (max-width: 1200px) {
     .item1 {
         font-size: 16px;
+        padding-right: 1px;
     }
 
     .item2 {
@@ -354,17 +355,18 @@ h3 {
 
     .item2 img {
         border-radius: 8px;
-        width: 400px;
+        width: 72vw;
     }
 
     .item3 {
         grid-row: 3;
-        margin-right: 80px;
+        margin-right: 1px;
         font-size: 16px;
     }
 
     .item4 {
         grid-row: 4;
+        width: 350px;
     }
 }
 
@@ -379,13 +381,12 @@ h3 {
 
 .card {
     display: flex;
-    width: 390.5px;
-    height: 500px;
+    width: 25vw;
     border-radius: 10px;
     background-color: #F4E3DB;
     justify-content: center;
     align-items: center;
-    margin: 0% 0% 2% 1%;
+    margin: 0vw 0vw 2vw 1vw;
     font-family: "Puritan", sans-serif;
 }
 
@@ -399,8 +400,8 @@ h3 {
 } */
 
 .sprite {
-    width: 500px;
-    height: 500px;
+    width: 25vw;
+    height: 25vw;
     background: url('images/animation-bag.png') 0 0 no-repeat;
     animation: play 2.3s steps(12) infinite;
 }
@@ -426,8 +427,8 @@ h3 {
     
     .card {
         display: flex;
-        width: 390.5px;
-        height: 500px;
+        width: 300px;
+        height: 380px;
         border-radius: 10px;
         background-color: #F4E3DB;
         justify-content: center;
@@ -436,23 +437,18 @@ h3 {
         font-family: "Puritan", sans-serif;
     }
 
-    .button {
-        background-color: #ABB160;
-        border: none;
-        border-radius: 6px;
-        color: #FCF9F6;
-        padding: 14px 20px;
-        text-align: center;
-        text-decoration: none;
-        font-size: 16px;
-        margin: 0% 0% 0% 3.5%;
-        cursor: pointer;
-        transition: 0.3s;
-        font-family: "Puritan", sans-serif;
+    .card img {
+        object-fit: contain;
+        border-radius: 10px;
+        width: 300px;
+        height: 400px;
     }
-    
-    .button:hover {
-        background-color: #797E46;
+
+    .sprite {
+        width: 500px;
+        height: 500px;
+        background: url('images/animation-bag.png') 0 0 no-repeat;
+        animation: play 2.3s steps(12) infinite;
     }
 }
 
@@ -479,13 +475,18 @@ h3 {
     background-color: #797E46;
 }
 
-/* CONTACT */
-#contact h3 {
+@media (max-width: 820px) {
+    .button {
+        margin-left: 3.5%;
+    }
+}
+
+#contact-container {
     margin-left: 1%;
 }
 
+/* CONTACT */
 #contact-text {
-    margin-left: 1%;
     font-family: "Puritan", sans-serif;
     font-size: 18px;
     line-height: 1.5;
@@ -493,13 +494,9 @@ h3 {
 }
 
 @media (max-width: 600px) {
-    #contact h3 {
-        margin-left: 3%;
-    }
     #contact-text {
-        margin-left: 3%;
         font-family: "Puritan", sans-serif;
-        font-size: 18px;
+        font-size: 16px;
         line-height: 1.5;
         padding-bottom: 10px;
     }
@@ -538,7 +535,7 @@ input[type=submit]:hover {
 }
 
 .contact-form-container {
-    padding-left: 14px;
+
     padding-right: 36px;
     font-size: 18px;
     font-family: "Puritan", sans-serif;
@@ -548,12 +545,11 @@ input[type=submit]:hover {
     font-size: 18px;
     font-family: "Puritan", sans-serif;
     line-height: 1.5;
-    margin-left: 1%;
 }
 
 @media (max-width: 600px) {
     #contact2-text {
-    margin-left: 3%;
+    font-size: 16px;
     }
 }
 
@@ -597,6 +593,7 @@ footer {
     justify-content: center;
     align-items: center;
     padding: 0 8% 0 8%;
+    width: 100%;
 }
 
 #copyright-container {
@@ -617,9 +614,10 @@ footer {
 #some-container img {
     width: 30px;
     margin: 10%;
+    padding-left: 16px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 820px) {
     footer {
     display: flex;
     justify-content: center;
@@ -639,13 +637,13 @@ footer {
 
     #some-container {
     position: static;
-    margin-bottom: 10px;
     width: 100%;
     justify-content: center;
     }
 
     #some-container img {
     width: 26px;
-    margin: 5px;
+    margin: 8px;
+    padding-left: 0px;
     }
 }
