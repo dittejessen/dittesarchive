@@ -1,6 +1,7 @@
 body{
     background-color: #FCF9F6;
     color: #121212;
+    overflow-x: hidden;
 }
 
 /* #header-container {
@@ -262,7 +263,6 @@ h2 {
 
 @media (max-width: 820px) {
 h2 {
-    margin-left: 0%;
     font-family: "the-seasons", sans-serif;
     padding-top: 60px;
     font-size: 28px;
@@ -298,6 +298,7 @@ h3 {
     flex-wrap: wrap;
     width: 450px;
     border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 @media (max-width: 1200px) {
@@ -350,21 +351,6 @@ h3 {
 }
 
 @media (max-width: 1200px) {
-    /* .item1 {
-        font-size: 16px;
-        padding-right: 1px;
-    }
-
-    .item2 {
-        grid-column: 1;
-        grid-row: 2;
-    }
-
-    .item2 img {
-        border-radius: 8px;
-        width: 72vw;
-    } */
-
     .item3 {
         grid-row: 3;
         margin-right: 1px;
@@ -379,84 +365,40 @@ h3 {
 
 /* PROJECTS */
 #projects-text {
-    margin-left: 1%;
     font-family: "Puritan", sans-serif;
     font-size: 18px;
     line-height: 1.5;
     padding-bottom: 10px;
 }
 
-.card {
-    display: flex;
-    width: 25vw;
-    border-radius: 10px;
-    background-color: #F4E3DB;
-    justify-content: center;
-    align-items: center;
-    margin: 0vw 0vw 2vw 1vw;
-    font-family: "Puritan", sans-serif;
-}
-
-.card img {
-    object-fit: contain;
-    border-radius: 10px;
-}
-
-/* .card img:hover {
-    opacity: 0.7;
-} */
-
-.sprite {
-    width: 25vw;
-    height: 25vw;
-    background: url('images/animation-bag.png') 0 0 no-repeat;
-    animation: play 2.3s steps(12) infinite;
-}
-
-@keyframes play {
-    0%{background-position:-50px;}
-    100% {background-position: -6050px; }
-}
-
-#card-container {
+.card-container {
     display: flex;
     flex-wrap: wrap;
+    gap: 30px;
+    padding-bottom: 20px;
+    width: 100%;
+    max-width: 1200px;
 }
 
-@media (max-width: 820px) {
-    #projects-text {
-        margin-left: 3.5%;
-        font-family: "Puritan", sans-serif;
-        font-size: 16px;
-        line-height: 1.5;
-        padding-bottom: 10px;
-    }
-    
-    .card {
-        display: flex;
-        width: 300px;
-        height: 380px;
-        border-radius: 10px;
-        background-color: #F4E3DB;
-        justify-content: center;
-        align-items: center;
-        margin: 0% 0% 5% 3.5%;
-        font-family: "Puritan", sans-serif;
-    }
+.card {
+    background-color: #f9e2db;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 375px;
+    height: 479.75px;
+    box-sizing: border-box;
+}
 
-    .card img {
-        object-fit: contain;
-        border-radius: 10px;
-        width: 300px;
-        height: 400px;
-    }
+.photos {
+    width: 375px;
+    height: 479.75px;
+    border-radius: 12px;
+}
 
-    .sprite {
-        width: 500px;
-        height: 500px;
-        background: url('images/animation-bag.png') 0 0 no-repeat;
-        animation: play 2.3s steps(12) infinite;
-    }
+.animation {
+    width: 120%;
+    margin-left: -40px;
+    margin-top: 20px;
 }
 
 .button {
@@ -467,9 +409,9 @@ h3 {
     padding: 14px 20px;
     text-align: center;
     font-size: 16px;
-    margin: 0% 0% 0% 1%;
     cursor: pointer;
     transition: 0.3s;
+    box-shadow: 0 8px 16px rgba(9, 9, 9, 0.2);
 }
 
 .button a {
@@ -480,16 +422,34 @@ h3 {
 
 .button:hover {
     background-color: #797E46;
+    box-shadow: 0 8px 16px rgba(9, 9, 9, 0.2);
 }
 
 @media (max-width: 820px) {
-    .button {
-        margin-left: 3.5%;
+    #projects-text {
+        font-family: "Puritan", sans-serif;
+        font-size: 16px;
+        line-height: 1.5;
+        padding-bottom: 10px;
+    }
+
+    .card {
+        width: 333.33px;
+        height: 426.44px;
+    }
+
+    .photos {
+        width: 333.33px;
+        height: 426.44px;
+        border-radius: 8px;
+    }
+
+    .animation {
+        width: 110%;
+        margin-left: -20px;
+        margin-top: 40px;
     }
 }
-
-/* #contact-container {
-} */
 
 /* CONTACT */
 #contact-text {
@@ -534,15 +494,16 @@ input[type=submit] {
     cursor: pointer;
     transition: 0.3s;
     font-family: "Puritan", sans-serif;
+    box-shadow: 0 8px 16px rgba(9, 9, 9, 0.2);
 }
 
 input[type=submit]:hover {
     background-color: #797E46;
+    box-shadow: 0 8px 16px rgba(9, 9, 9, 0.2);
 }
 
 .contact-form-container {
-
-    padding-right: 36px;
+    padding-right: 26px;
     font-size: 18px;
     font-family: "Puritan", sans-serif;
 }
